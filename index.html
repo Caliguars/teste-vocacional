@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Teste Vocacional</title>
+    <script src="teste vocacional.js"></script>
+    <link href="teste vocacional.css" rel="stylesheet">
+</head>
+<header>
+    <H1>Teste Vocacional</H1>
+</header>
+<body>
+    <h2>Faça o seu teste vocacional</h2>
+    <h3>Parte 1: Interesses Pessoais
+Escolha a alternativa que mais se aproxima do que você gosta de fazer.</h3>
+    <p>1 - No seu tempo livre, qual atividade você prefere?</p>
+    <select>
+        <option value="a"> a: Resolver problemas ou quebra-cabeças (ex.: jogos de lógica, sudoku)</option>
+        <option value="b"> b: Criar algo novo (ex.: desenhar, escrever, cozinhar)</option>
+        <option value="c"> c: Ajudar outras pessoas (ex.: ouvir amigos, voluntariar)</option>
+        <option value="d"> d: Explorar a natureza ou aprender sobre o meio ambiente</option>
+        <option value="e"> e: Organizar eventos, liderar grupos ou planejar atividades</option>
+    </select>
+    <p>2 - Qual tipo de projeto escolar você mais gosta?</p>
+    <select>
+        <option value="a"> a: Resolver problemas ou quebra-cabeças (ex.: jogos de lógica, sudoku)</option>
+        <option value="b"> b: Criar algo novo (ex.: desenhar, escrever, cozinhar)</option>
+        <option value="c"> c: Ajudar outras pessoas (ex.: ouvir amigos, voluntariar)</option>
+        <option value="d"> d: Explorar a natureza ou aprender sobre o meio ambiente</option>
+        <option value="e"> e: Organizar eventos, liderar grupos ou planejar atividades</option>
+    </select>
+    <p>3 - Se pudesse escolher uma matéria para estudar mais profundamente, qual seria?</p>
+    <select>
+        <option value="a"> a: Matemática ou Física</option>
+        <option value="b"> b: Artes ou Literatura</option>
+        <option value="c"> c: Psicologia ou Sociologia</option>
+        <option value="d"> d: Biologia ou Geografia</option>
+        <option value="e"> e: Administração ou Economia</option>
+    </select>
+    <p>4 - Qual dessas atividades você acha mais interessante?</p>
+    <select>
+        <option value="a"> a: Programar ou construir algo técnico (ex.: robôs, sites)</option>
+        <option value="b"> b: Escrever histórias, poesias ou criar campanhas publicitárias</option>
+        <option value="c"> c: Trabalhar com saúde ou bem-estar (ex.: primeiros socorros, terapia)</option>
+        <option value="d"> d: Estudar o comportamento animal ou mudanças climáticas</option>
+        <option value="e"> e: Gerenciar projetos ou negociar acordos</option>
+    </select>
+    <h3>Parte 2: Habilidades e Competências
+Escolha a alternativa que melhor reflete suas habilidades ou o que você acha que faz bem.</h3>
+    <p>5- Qual dessas habilidades você considera mais forte em você?</p>
+    <select>
+        <option value="a"> a: Resolver problemas lógicos ou matemáticos</option>
+        <option value="b"> b: Expressar ideias de forma criativa (escrita, desenho, fala)</option>
+        <option value="c"> c: Entender e apoiar as emoções das pessoas</option>
+        <option value="d"> d: Observar detalhes e analisar informações</option>
+        <option value="e"> e: Organizar tarefas ou liderar equipes</option>
+    </select>
+    <p>6- Em um trabalho em grupo, qual papel você geralmente assume?</p>
+    <select>
+        <option value="a"> a: O que analisa os dados e propõe soluções</option>
+        <option value="b"> b: O que traz ideias criativas ou faz o design</option>
+        <option value="c"> c: O que motiva o grupo e mantém todos unidos</option>
+        <option value="d"> d: O que pesquisa e organiza as informações</option>
+        <option value="e"> e: O que coordena o grupo e define prazos</option>
+    </select>
+    <p>7 - Qual dessas situações você se sente mais confortável?</p>
+    <select>
+        <option value="a"> a: Trabalhar com números ou tecnologia</option>
+        <option value="b"> b: Criar algo visual ou artístico</option>
+        <option value="c"> c: Conversar e ajudar pessoas com problemas</option>
+        <option value="d"> d: Estudar o meio ambiente ou fenômenos naturais</option>
+        <option value="e"> e: Planejar e executar projetos</option>
+    </select>
+    <h3>Parte 3: Valores e Objetivos
+Escolha a alternativa que mais reflete o que é importante para você em uma carreira.</h3>
+    <p>8 - O que você mais valoriza em uma profissão?</p>
+    <select>
+        <option value="a"> a: Resolver desafios complexos</option>
+        <option value="b"> b: Ser criativo e inovador</option>
+        <option value="c"> c: Fazer a diferença na vida das pessoas</option>
+        <option value="d"> d: Contribuir para um mundo mais sustentável</option>
+        <option value="e"> e: Ter estabilidade financeira ou liderança</option>
+    </select>
+    <p>9 - Qual ambiente de trabalho você prefere?</p>
+    <select>
+        <option value="a"> a: Laboratório, escritório técnico ou com tecnologia</option>
+        <option value="b"> b: Estúdio, agência criativa ou espaços culturais</option>
+        <option value="c"> c: Hospital, escola ou ONGs</option>
+        <option value="d"> d: Campo, fazenda ou centros de pesquisa ambiental</option>
+        <option value="e"> e: Escritório corporativo ou eventos</option>
+    </select>
+    <p>10 - Onde você se imagina daqui a 10 anos?</p>
+    <select>
+        <option value="a"> a:  Desenvolvendo novas tecnologias ou soluções científicas</option>
+        <option value="b"> b:  Criando conteúdo, como filmes, livros ou designs</option>
+        <option value="c"> c:  Trabalhando diretamente com pessoas, como médico ou professor</option>
+        <option value="d"> d:  Protegendo o meio ambiente ou estudando a natureza</option>
+        <option value="e"> e:  Gerenciando uma empresa ou liderando projet</option>
+    </select>
+    <h4>Clique aqui para ver o resultado:</h4>
+<button onclick="lerSelects()">Contar</button>
+<p id="resultado1">quantos % voce tem de inclinação para áreas como Ciências Exatas ou Tecnologia (ex.: Engenharia, Ciência da Computação, Matemática).</p>
+<p id="resultado2">quantos % voce tem de inclinação para áreas como Artes ou Comunicação (ex.: Design, Publicidade, Jornalismo, Letras).</p>
+<p id="resultado3">quantos % voce tem de inclinação para áreas como Ciências Humanas ou Saúde (ex.: Psicologia, Medicina, Pedagogia, Serviço Social).</p>
+<p id="resultado4">quantos % voce tem de inclinação para áreas como Ciências Biológicas ou Ambientais (ex.: Biologia, Agronomia, Gestão Ambiental).</p>
+<p id="resultado5">quantos % voce tem de inclinação para áreas como Gestão ou Negócios (ex.: Administração, Economia, Direito).</p>
+<hr>
+<p>Exemplo com porcentagem</p>
+<div class="fundoPorc">
+    <div class="barraPorc" id="exatas"></div>
+</div>
+</body>
+</html>

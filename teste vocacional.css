@@ -1,0 +1,16 @@
+.fundoPorc{
+  width: 100%;
+  background-color: #ddd;
+}
+
+.barraPorc {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+#exatas {
+    width: 0%;
+    background-color: #04AA6D;
+}
