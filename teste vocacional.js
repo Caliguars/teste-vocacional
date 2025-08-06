@@ -5,6 +5,9 @@ var quantidade_b = 0;
 var quantidade_c = 0;
 var quantidade_d = 0;
 var quantidade_e = 0;
+var quantidade_c = 0;
+var quantidade_d = 0;
+var quantidade_e = 0;
 
 // Função para cada select
 function contarOpcao(select) {
@@ -13,6 +16,16 @@ function contarOpcao(select) {
     } else if (select.value == 'b') {
         quantidade_b++;
     }
+    else if (select.value == 'c') {
+      quantidade_c++;
+    }
+    else if (select.value == 'd') {
+      quantidade_d++;
+    }
+    else if (select.value == 'e') {
+      quantidade_e++;
+    }
+
     else if (select.value == 'c') {
       quantidade_c++;
     }
@@ -39,6 +52,9 @@ function lerSelects(){
     // Mostra o resultado no console depois de rodar "todo o loop"
     console.log('Quantidade de A:', quantidade_a);
     console.log('Quantidade de B:', quantidade_b);
+    console.log('Quantidade de C:', quantidade_c);
+    console.log('Quantidade de D:', quantidade_d);
+    console.log('Quantidade de E:', quantidade_e);
     console.log('Quantidade de C:', quantidade_c);
     console.log('Quantidade de D:', quantidade_d);
     console.log('Quantidade de E:', quantidade_e);
