@@ -43,7 +43,7 @@ function lerSelects(){
     console.log('Quantidade de D:', quantidade_d);
     console.log('Quantidade de E:', quantidade_e);
     mostrarResultado();
-    atualizarPorcentagem();
+    grafico();
 }
 // Maneira simples de mostrar os resultados
 function mostrarResultado(){
@@ -54,9 +54,27 @@ function mostrarResultado(){
     document.getElementById("resultado5").innerHTML = "Sua afinidade à area de Gestão ou Negócios é de:"+quantidade_e;
 }
 // Mostrando com barra de porcentagem
-function atualizarPorcentagem(){
-    const skillBar = document.getElementById('exatas');
-    // Multiplicando por 10 pq temos 10 questões, mudem se tiverem números diferentes.
-    skillBar.style.width = quantidade_a*10+'%';
-    skillBar.innerHTML = quantidade_a*10+'%';
+
+
+function grafico(){
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+}
+function drawChart() {
+    const data = google.visualization.arrayToDataTable([
+    ['Contry', 'Mhl'],
+    ['Ciências Exatas ou Tecnologia',quantidade_a],
+    ['Artes ou Comunicação',quantidade_b],
+    ['Ciências Humanas ou Saúde',quantidade_c],
+    ['Ciências Biológicas ou Ambientais',quantidade_d],
+    ['Gestão ou Negócios',quantidade_e]
+    ]);
+
+    const options = {
+    title:'Resultado do teste vocacional',
+    is3D:true
+    };
+
+    const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
 }
